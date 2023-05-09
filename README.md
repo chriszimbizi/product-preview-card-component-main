@@ -24,11 +24,12 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
+![desktop](https://user-images.githubusercontent.com/121321293/237021692-b94a9cee-3e3c-4339-b64f-c759c2f49d6b.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-qRjF0BEjWf)
+- Live Site URL: [GitHub Pages](https://chriszimbizi.github.io/product-preview-card-component-main/)
 
 ## My process
 
@@ -42,7 +43,9 @@ Users should be able to:
 
 ### What I learned
 
-**html**
+**HTML**
+
+```
 <!-- changing image on orientation -->
 <picture class="product__image">
           <source
@@ -54,48 +57,58 @@ Users should be able to:
             alt="perfume bottle surrounded by green leaves"
           />
         </picture>
+```
 
+```
 <!-- sr-only class -->
 <p class="product__current-price">
   <span class="sr-only">Current price:</span>
   $149.99
 </p>
+```
 
+```
 <!-- data element for buttons -->
 
 <button class="button" data-icon ="shopping-cart"> Add to Cart</button>
+```
 
-**css**
+**CSS**
 
+```
 <!-- centering content on the body -->
 
 body {
-min-width: 100vw;
-display: grid;
-place-content: center;
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
 }
+```
 
+```
 <!-- sr-only class css -->
 
 .sr-only:not(:focus):not(:active) {
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-height: 1px;
-overflow: hidden;
-position: absolute;
-white-space: nowrap;
-width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
+```
 
+```
 <!-- data element for buttons -->
 
 .button[data-icon="shopping-cart"]::before {
-content: "";
-background-image: url(images/icon-cart.svg);
-width: 15px;
-height: 16px;
+    content: "";
+    background-image: url(images/icon-cart.svg);
+    width: 15px;
+    height: 16px;
 }
-
+```
 ### Useful resources
 
 - [Scott O Hara](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html) - This helped me with the code for the sr-only class that improved accessibility.
@@ -105,5 +118,7 @@ height: 16px;
 - [Kevin Powell] (https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - I highly recommend his channel for anyone interested in getting a deeper understanding of CSS, responsive design and web accessibility.
 
 ## Author
+- LinkedIn [Christopher Zimbizi](https://www.linkedin.com/in/chriszimbzi)
+- FrontEnd Mentor [@chriszimbizi](https://www.frontendmentor.io/profile/chriszimbizi)
 
-Name: Christopher Zimbizi
+
